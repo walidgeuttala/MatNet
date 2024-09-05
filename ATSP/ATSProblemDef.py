@@ -37,11 +37,14 @@ def get_random_problems(batch_size, node_cnt, problem_gen_params):
     int_min = problem_gen_params['int_min']
     int_max = problem_gen_params['int_max']
     scaler = problem_gen_params['scaler']
-
+    
+    # the mean and the max is the weight randomly it is not triangle enquilty
     problems = torch.randint(low=int_min, high=int_max, size=(batch_size, node_cnt, node_cnt))
     # shape: (batch, node, node)
+    # set all diagonal values into 0
     problems[:, torch.arange(node_cnt), torch.arange(node_cnt)] = 0
 
+    # this while loop make sure the triangle enqulity is applied
     while True:
         old_problems = problems.clone()
 
@@ -52,7 +55,7 @@ def get_random_problems(batch_size, node_cnt, problem_gen_params):
             break
 
     # Scale
-    scaled_problems = problems.float() / scaler
+    scaled_problems =   problems.float() / scaler
 
     return scaled_problems
     # shape: (batch, node, node)

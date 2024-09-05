@@ -57,7 +57,7 @@ from ATSPTrainer import ATSPTrainer as Trainer
 # parameters
 
 env_params = {
-    'node_cnt': 20,
+    'node_cnt': 64,
     'problem_gen_params': {
         'int_min': 0,
         'int_max': 1000*1000,

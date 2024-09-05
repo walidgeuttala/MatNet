@@ -1,0 +1,1024 @@
+[2024-09-05 15:04:18] train.py(161) : DEBUG_MODE: False
+[2024-09-05 15:04:18] train.py(162) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-09-05 15:04:18] train.py(163) : env_params{'node_cnt': 20, 'problem_gen_params': {'int_min': 0, 'int_max': 1000000, 'scaler': 1000000}, 'pomo_size': 20}
+[2024-09-05 15:04:18] train.py(163) : model_params{'embedding_dim': 256, 'sqrt_embedding_dim': 16.0, 'encoder_layer_num': 5, 'qkv_dim': 16, 'sqrt_qkv_dim': 4.0, 'head_num': 16, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'ms_hidden_dim': 16, 'ms_layer1_init': 0.7071067811865476, 'ms_layer2_init': 0.25, 'eval_type': 'argmax', 'one_hot_seed_cnt': 20}
+[2024-09-05 15:04:18] train.py(163) : optimizer_params{'optimizer': {'lr': 0.0004, 'weight_decay': 1e-06}, 'scheduler': {'milestones': [2001, 2101], 'gamma': 0.1}}
+[2024-09-05 15:04:18] train.py(163) : trainer_params{'use_cuda': True, 'cuda_device_num': 0, 'epochs': 2000, 'train_episodes': 10000, 'train_batch_size': 200, 'logging': {'model_save_interval': 100, 'img_save_interval': 200, 'log_image_params_1': {'json_foldername': 'log_image_style', 'filename': 'style.json'}, 'log_image_params_2': {'json_foldername': 'log_image_style', 'filename': 'style_loss.json'}}, 'model_load': {'enable': False}}
+[2024-09-05 15:04:18] train.py(163) : logger_params{'log_file': {'desc': 'matnet_train', 'filename': 'log.txt', 'filepath': './result/20240905_220359_matnet_train'}}
+[2024-09-05 15:04:27] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:04:37] ATSPTrainer.py(169) : Epoch   1: Train 200/10000(2.0%)  Score: 3.0257,  Loss: 0.0077
+[2024-09-05 15:04:38] ATSPTrainer.py(169) : Epoch   1: Train 400/10000(4.0%)  Score: 2.9371,  Loss: -0.0482
+[2024-09-05 15:04:38] ATSPTrainer.py(169) : Epoch   1: Train 600/10000(6.0%)  Score: 2.8716,  Loss: -0.0997
+[2024-09-05 15:04:38] ATSPTrainer.py(169) : Epoch   1: Train 800/10000(8.0%)  Score: 2.8231,  Loss: -0.1338
+[2024-09-05 15:04:38] ATSPTrainer.py(169) : Epoch   1: Train 1000/10000(10.0%)  Score: 2.7654,  Loss: -0.1703
+[2024-09-05 15:04:38] ATSPTrainer.py(169) : Epoch   1: Train 1200/10000(12.0%)  Score: 2.7117,  Loss: -0.1974
+[2024-09-05 15:04:39] ATSPTrainer.py(169) : Epoch   1: Train 1400/10000(14.0%)  Score: 2.6671,  Loss: -0.2132
+[2024-09-05 15:04:39] ATSPTrainer.py(169) : Epoch   1: Train 1600/10000(16.0%)  Score: 2.6257,  Loss: -0.2218
+[2024-09-05 15:04:39] ATSPTrainer.py(169) : Epoch   1: Train 1800/10000(18.0%)  Score: 2.5864,  Loss: -0.2282
+[2024-09-05 15:04:39] ATSPTrainer.py(169) : Epoch   1: Train 2000/10000(20.0%)  Score: 2.5470,  Loss: -0.2306
+[2024-09-05 15:04:47] ATSPTrainer.py(174) : Epoch   1: Train (100%)  Score: 2.0194,  Loss: -0.2165
+[2024-09-05 15:04:47] ATSPTrainer.py(108) : Epoch   1/2000: Time Est.: Elapsed[0.32m], Remain[10.78h]
+[2024-09-05 15:04:47] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:04:56] ATSPTrainer.py(174) : Epoch   2: Train (100%)  Score: 1.7210,  Loss: -0.1802
+[2024-09-05 15:04:56] ATSPTrainer.py(108) : Epoch   2/2000: Time Est.: Elapsed[0.48m], Remain[8.01h]
+[2024-09-05 15:04:56] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:04:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:05:07] ATSPTrainer.py(174) : Epoch   3: Train (100%)  Score: 1.6931,  Loss: -0.1756
+[2024-09-05 15:05:07] ATSPTrainer.py(108) : Epoch   3/2000: Time Est.: Elapsed[0.66m], Remain[7.27h]
+[2024-09-05 15:05:07] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:05:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:05:16] ATSPTrainer.py(174) : Epoch   4: Train (100%)  Score: 1.6887,  Loss: -0.1736
+[2024-09-05 15:05:16] ATSPTrainer.py(108) : Epoch   4/2000: Time Est.: Elapsed[0.81m], Remain[6.77h]
+[2024-09-05 15:05:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:05:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:05:26] ATSPTrainer.py(174) : Epoch   5: Train (100%)  Score: 1.6781,  Loss: -0.1744
+[2024-09-05 15:05:26] ATSPTrainer.py(108) : Epoch   5/2000: Time Est.: Elapsed[0.97m], Remain[6.47h]
+[2024-09-05 15:05:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:05:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:05:35] ATSPTrainer.py(174) : Epoch   6: Train (100%)  Score: 1.6666,  Loss: -0.1751
+[2024-09-05 15:05:35] ATSPTrainer.py(108) : Epoch   6/2000: Time Est.: Elapsed[1.13m], Remain[6.27h]
+[2024-09-05 15:05:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:05:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:05:45] ATSPTrainer.py(174) : Epoch   7: Train (100%)  Score: 1.6575,  Loss: -0.1752
+[2024-09-05 15:05:45] ATSPTrainer.py(108) : Epoch   7/2000: Time Est.: Elapsed[1.29m], Remain[6.13h]
+[2024-09-05 15:05:45] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:05:45] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:05:54] ATSPTrainer.py(174) : Epoch   8: Train (100%)  Score: 1.6448,  Loss: -0.1717
+[2024-09-05 15:05:54] ATSPTrainer.py(108) : Epoch   8/2000: Time Est.: Elapsed[1.45m], Remain[6.02h]
+[2024-09-05 15:05:54] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:05:54] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:06:04] ATSPTrainer.py(174) : Epoch   9: Train (100%)  Score: 1.6287,  Loss: -0.1648
+[2024-09-05 15:06:04] ATSPTrainer.py(108) : Epoch   9/2000: Time Est.: Elapsed[1.61m], Remain[5.94h]
+[2024-09-05 15:06:04] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:06:04] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:06:13] ATSPTrainer.py(174) : Epoch  10: Train (100%)  Score: 1.6183,  Loss: -0.1564
+[2024-09-05 15:06:13] ATSPTrainer.py(108) : Epoch  10/2000: Time Est.: Elapsed[1.77m], Remain[5.87h]
+[2024-09-05 15:06:13] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:06:13] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:06:23] ATSPTrainer.py(174) : Epoch  11: Train (100%)  Score: 1.6190,  Loss: -0.1495
+[2024-09-05 15:06:23] ATSPTrainer.py(108) : Epoch  11/2000: Time Est.: Elapsed[1.93m], Remain[5.81h]
+[2024-09-05 15:06:23] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:06:23] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:06:32] ATSPTrainer.py(174) : Epoch  12: Train (100%)  Score: 1.6073,  Loss: -0.1413
+[2024-09-05 15:06:32] ATSPTrainer.py(108) : Epoch  12/2000: Time Est.: Elapsed[2.09m], Remain[5.76h]
+[2024-09-05 15:06:32] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:06:33] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:06:42] ATSPTrainer.py(174) : Epoch  13: Train (100%)  Score: 1.6025,  Loss: -0.1332
+[2024-09-05 15:06:42] ATSPTrainer.py(108) : Epoch  13/2000: Time Est.: Elapsed[2.25m], Remain[5.72h]
+[2024-09-05 15:06:42] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:06:42] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:06:52] ATSPTrainer.py(174) : Epoch  14: Train (100%)  Score: 1.6066,  Loss: -0.1246
+[2024-09-05 15:06:52] ATSPTrainer.py(108) : Epoch  14/2000: Time Est.: Elapsed[2.40m], Remain[5.69h]
+[2024-09-05 15:06:52] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:06:52] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:01] ATSPTrainer.py(174) : Epoch  15: Train (100%)  Score: 1.6038,  Loss: -0.1162
+[2024-09-05 15:07:01] ATSPTrainer.py(108) : Epoch  15/2000: Time Est.: Elapsed[2.56m], Remain[5.65h]
+[2024-09-05 15:07:01] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:01] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:11] ATSPTrainer.py(174) : Epoch  16: Train (100%)  Score: 1.6000,  Loss: -0.1066
+[2024-09-05 15:07:11] ATSPTrainer.py(108) : Epoch  16/2000: Time Est.: Elapsed[2.72m], Remain[5.63h]
+[2024-09-05 15:07:11] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:11] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:20] ATSPTrainer.py(174) : Epoch  17: Train (100%)  Score: 1.5985,  Loss: -0.0952
+[2024-09-05 15:07:20] ATSPTrainer.py(108) : Epoch  17/2000: Time Est.: Elapsed[2.88m], Remain[5.60h]
+[2024-09-05 15:07:20] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:20] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:30] ATSPTrainer.py(174) : Epoch  18: Train (100%)  Score: 1.5942,  Loss: -0.0851
+[2024-09-05 15:07:30] ATSPTrainer.py(108) : Epoch  18/2000: Time Est.: Elapsed[3.04m], Remain[5.58h]
+[2024-09-05 15:07:30] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:30] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:39] ATSPTrainer.py(174) : Epoch  19: Train (100%)  Score: 1.5937,  Loss: -0.0785
+[2024-09-05 15:07:39] ATSPTrainer.py(108) : Epoch  19/2000: Time Est.: Elapsed[3.20m], Remain[5.56h]
+[2024-09-05 15:07:39] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:39] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:49] ATSPTrainer.py(174) : Epoch  20: Train (100%)  Score: 1.5942,  Loss: -0.0730
+[2024-09-05 15:07:49] ATSPTrainer.py(108) : Epoch  20/2000: Time Est.: Elapsed[3.36m], Remain[5.54h]
+[2024-09-05 15:07:49] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:49] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:07:58] ATSPTrainer.py(174) : Epoch  21: Train (100%)  Score: 1.6009,  Loss: -0.0682
+[2024-09-05 15:07:58] ATSPTrainer.py(108) : Epoch  21/2000: Time Est.: Elapsed[3.52m], Remain[5.53h]
+[2024-09-05 15:07:58] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:07:58] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:08:08] ATSPTrainer.py(174) : Epoch  22: Train (100%)  Score: 1.5936,  Loss: -0.0642
+[2024-09-05 15:08:08] ATSPTrainer.py(108) : Epoch  22/2000: Time Est.: Elapsed[3.68m], Remain[5.51h]
+[2024-09-05 15:08:08] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:08:08] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:08:17] ATSPTrainer.py(174) : Epoch  23: Train (100%)  Score: 1.5966,  Loss: -0.0623
+[2024-09-05 15:08:17] ATSPTrainer.py(108) : Epoch  23/2000: Time Est.: Elapsed[3.84m], Remain[5.50h]
+[2024-09-05 15:08:17] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:08:18] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:08:27] ATSPTrainer.py(174) : Epoch  24: Train (100%)  Score: 1.5952,  Loss: -0.0604
+[2024-09-05 15:08:27] ATSPTrainer.py(108) : Epoch  24/2000: Time Est.: Elapsed[4.00m], Remain[5.48h]
+[2024-09-05 15:08:27] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:08:27] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:08:37] ATSPTrainer.py(174) : Epoch  25: Train (100%)  Score: 1.5952,  Loss: -0.0576
+[2024-09-05 15:08:37] ATSPTrainer.py(108) : Epoch  25/2000: Time Est.: Elapsed[4.16m], Remain[5.47h]
+[2024-09-05 15:08:37] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:08:37] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:08:46] ATSPTrainer.py(174) : Epoch  26: Train (100%)  Score: 1.5948,  Loss: -0.0559
+[2024-09-05 15:08:46] ATSPTrainer.py(108) : Epoch  26/2000: Time Est.: Elapsed[4.32m], Remain[5.46h]
+[2024-09-05 15:08:46] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:08:46] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:08:56] ATSPTrainer.py(174) : Epoch  27: Train (100%)  Score: 1.5999,  Loss: -0.0559
+[2024-09-05 15:08:56] ATSPTrainer.py(108) : Epoch  27/2000: Time Est.: Elapsed[4.47m], Remain[5.45h]
+[2024-09-05 15:08:56] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:08:56] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:09:05] ATSPTrainer.py(174) : Epoch  28: Train (100%)  Score: 1.5885,  Loss: -0.0538
+[2024-09-05 15:09:05] ATSPTrainer.py(108) : Epoch  28/2000: Time Est.: Elapsed[4.63m], Remain[5.44h]
+[2024-09-05 15:09:05] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:09:05] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:09:15] ATSPTrainer.py(174) : Epoch  29: Train (100%)  Score: 1.5948,  Loss: -0.0533
+[2024-09-05 15:09:15] ATSPTrainer.py(108) : Epoch  29/2000: Time Est.: Elapsed[4.79m], Remain[5.43h]
+[2024-09-05 15:09:15] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:09:15] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:09:24] ATSPTrainer.py(174) : Epoch  30: Train (100%)  Score: 1.5948,  Loss: -0.0503
+[2024-09-05 15:09:24] ATSPTrainer.py(108) : Epoch  30/2000: Time Est.: Elapsed[4.95m], Remain[5.42h]
+[2024-09-05 15:09:24] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:09:24] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:09:34] ATSPTrainer.py(174) : Epoch  31: Train (100%)  Score: 1.5915,  Loss: -0.0504
+[2024-09-05 15:09:34] ATSPTrainer.py(108) : Epoch  31/2000: Time Est.: Elapsed[5.11m], Remain[5.41h]
+[2024-09-05 15:09:34] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:09:34] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:09:43] ATSPTrainer.py(174) : Epoch  32: Train (100%)  Score: 1.5893,  Loss: -0.0505
+[2024-09-05 15:09:43] ATSPTrainer.py(108) : Epoch  32/2000: Time Est.: Elapsed[5.27m], Remain[5.40h]
+[2024-09-05 15:09:43] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:09:43] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:09:53] ATSPTrainer.py(174) : Epoch  33: Train (100%)  Score: 1.5945,  Loss: -0.0498
+[2024-09-05 15:09:53] ATSPTrainer.py(108) : Epoch  33/2000: Time Est.: Elapsed[5.43m], Remain[5.39h]
+[2024-09-05 15:09:53] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:09:53] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:10:02] ATSPTrainer.py(174) : Epoch  34: Train (100%)  Score: 1.5935,  Loss: -0.0475
+[2024-09-05 15:10:02] ATSPTrainer.py(108) : Epoch  34/2000: Time Est.: Elapsed[5.59m], Remain[5.38h]
+[2024-09-05 15:10:02] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:10:03] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:10:12] ATSPTrainer.py(174) : Epoch  35: Train (100%)  Score: 1.5886,  Loss: -0.0470
+[2024-09-05 15:10:12] ATSPTrainer.py(108) : Epoch  35/2000: Time Est.: Elapsed[5.75m], Remain[5.38h]
+[2024-09-05 15:10:12] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:10:12] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:10:22] ATSPTrainer.py(174) : Epoch  36: Train (100%)  Score: 1.5885,  Loss: -0.0469
+[2024-09-05 15:10:22] ATSPTrainer.py(108) : Epoch  36/2000: Time Est.: Elapsed[5.90m], Remain[5.37h]
+[2024-09-05 15:10:22] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:10:22] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:10:31] ATSPTrainer.py(174) : Epoch  37: Train (100%)  Score: 1.5925,  Loss: -0.0480
+[2024-09-05 15:10:31] ATSPTrainer.py(108) : Epoch  37/2000: Time Est.: Elapsed[6.06m], Remain[5.36h]
+[2024-09-05 15:10:31] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:10:31] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:10:41] ATSPTrainer.py(174) : Epoch  38: Train (100%)  Score: 1.5941,  Loss: -0.0462
+[2024-09-05 15:10:41] ATSPTrainer.py(108) : Epoch  38/2000: Time Est.: Elapsed[6.22m], Remain[5.36h]
+[2024-09-05 15:10:41] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:10:41] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:10:50] ATSPTrainer.py(174) : Epoch  39: Train (100%)  Score: 1.5902,  Loss: -0.0453
+[2024-09-05 15:10:50] ATSPTrainer.py(108) : Epoch  39/2000: Time Est.: Elapsed[6.38m], Remain[5.35h]
+[2024-09-05 15:10:50] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:10:50] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:00] ATSPTrainer.py(174) : Epoch  40: Train (100%)  Score: 1.5880,  Loss: -0.0447
+[2024-09-05 15:11:00] ATSPTrainer.py(108) : Epoch  40/2000: Time Est.: Elapsed[6.54m], Remain[5.34h]
+[2024-09-05 15:11:00] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:00] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:09] ATSPTrainer.py(174) : Epoch  41: Train (100%)  Score: 1.5865,  Loss: -0.0448
+[2024-09-05 15:11:09] ATSPTrainer.py(108) : Epoch  41/2000: Time Est.: Elapsed[6.70m], Remain[5.34h]
+[2024-09-05 15:11:09] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:09] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:19] ATSPTrainer.py(174) : Epoch  42: Train (100%)  Score: 1.5880,  Loss: -0.0444
+[2024-09-05 15:11:19] ATSPTrainer.py(108) : Epoch  42/2000: Time Est.: Elapsed[6.86m], Remain[5.33h]
+[2024-09-05 15:11:19] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:19] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:28] ATSPTrainer.py(174) : Epoch  43: Train (100%)  Score: 1.5939,  Loss: -0.0446
+[2024-09-05 15:11:28] ATSPTrainer.py(108) : Epoch  43/2000: Time Est.: Elapsed[7.02m], Remain[5.32h]
+[2024-09-05 15:11:28] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:29] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:38] ATSPTrainer.py(174) : Epoch  44: Train (100%)  Score: 1.5818,  Loss: -0.0436
+[2024-09-05 15:11:38] ATSPTrainer.py(108) : Epoch  44/2000: Time Est.: Elapsed[7.18m], Remain[5.32h]
+[2024-09-05 15:11:38] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:38] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:48] ATSPTrainer.py(174) : Epoch  45: Train (100%)  Score: 1.5854,  Loss: -0.0441
+[2024-09-05 15:11:48] ATSPTrainer.py(108) : Epoch  45/2000: Time Est.: Elapsed[7.34m], Remain[5.31h]
+[2024-09-05 15:11:48] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:48] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:11:57] ATSPTrainer.py(174) : Epoch  46: Train (100%)  Score: 1.5893,  Loss: -0.0429
+[2024-09-05 15:11:57] ATSPTrainer.py(108) : Epoch  46/2000: Time Est.: Elapsed[7.50m], Remain[5.31h]
+[2024-09-05 15:11:57] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:11:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:12:07] ATSPTrainer.py(174) : Epoch  47: Train (100%)  Score: 1.5868,  Loss: -0.0438
+[2024-09-05 15:12:07] ATSPTrainer.py(108) : Epoch  47/2000: Time Est.: Elapsed[7.66m], Remain[5.30h]
+[2024-09-05 15:12:07] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:12:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:12:16] ATSPTrainer.py(174) : Epoch  48: Train (100%)  Score: 1.5844,  Loss: -0.0431
+[2024-09-05 15:12:16] ATSPTrainer.py(108) : Epoch  48/2000: Time Est.: Elapsed[7.81m], Remain[5.30h]
+[2024-09-05 15:12:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:12:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:12:26] ATSPTrainer.py(174) : Epoch  49: Train (100%)  Score: 1.5846,  Loss: -0.0426
+[2024-09-05 15:12:26] ATSPTrainer.py(108) : Epoch  49/2000: Time Est.: Elapsed[7.97m], Remain[5.29h]
+[2024-09-05 15:12:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:12:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:12:35] ATSPTrainer.py(174) : Epoch  50: Train (100%)  Score: 1.5858,  Loss: -0.0424
+[2024-09-05 15:12:35] ATSPTrainer.py(108) : Epoch  50/2000: Time Est.: Elapsed[8.13m], Remain[5.29h]
+[2024-09-05 15:12:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:12:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:12:45] ATSPTrainer.py(174) : Epoch  51: Train (100%)  Score: 1.5824,  Loss: -0.0418
+[2024-09-05 15:12:45] ATSPTrainer.py(108) : Epoch  51/2000: Time Est.: Elapsed[8.29m], Remain[5.28h]
+[2024-09-05 15:12:45] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:12:45] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:12:54] ATSPTrainer.py(174) : Epoch  52: Train (100%)  Score: 1.5877,  Loss: -0.0418
+[2024-09-05 15:12:54] ATSPTrainer.py(108) : Epoch  52/2000: Time Est.: Elapsed[8.45m], Remain[5.28h]
+[2024-09-05 15:12:54] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:12:54] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:13:04] ATSPTrainer.py(174) : Epoch  53: Train (100%)  Score: 1.5833,  Loss: -0.0411
+[2024-09-05 15:13:04] ATSPTrainer.py(108) : Epoch  53/2000: Time Est.: Elapsed[8.61m], Remain[5.27h]
+[2024-09-05 15:13:04] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:13:04] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:13:13] ATSPTrainer.py(174) : Epoch  54: Train (100%)  Score: 1.5812,  Loss: -0.0426
+[2024-09-05 15:13:13] ATSPTrainer.py(108) : Epoch  54/2000: Time Est.: Elapsed[8.77m], Remain[5.27h]
+[2024-09-05 15:13:13] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:13:14] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:13:23] ATSPTrainer.py(174) : Epoch  55: Train (100%)  Score: 1.5861,  Loss: -0.0426
+[2024-09-05 15:13:23] ATSPTrainer.py(108) : Epoch  55/2000: Time Est.: Elapsed[8.93m], Remain[5.26h]
+[2024-09-05 15:13:23] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:13:23] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:13:32] ATSPTrainer.py(174) : Epoch  56: Train (100%)  Score: 1.5818,  Loss: -0.0416
+[2024-09-05 15:13:32] ATSPTrainer.py(108) : Epoch  56/2000: Time Est.: Elapsed[9.09m], Remain[5.26h]
+[2024-09-05 15:13:32] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:13:33] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:13:42] ATSPTrainer.py(174) : Epoch  57: Train (100%)  Score: 1.5824,  Loss: -0.0412
+[2024-09-05 15:13:42] ATSPTrainer.py(108) : Epoch  57/2000: Time Est.: Elapsed[9.25m], Remain[5.25h]
+[2024-09-05 15:13:42] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:13:42] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:13:52] ATSPTrainer.py(174) : Epoch  58: Train (100%)  Score: 1.5815,  Loss: -0.0405
+[2024-09-05 15:13:52] ATSPTrainer.py(108) : Epoch  58/2000: Time Est.: Elapsed[9.41m], Remain[5.25h]
+[2024-09-05 15:13:52] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:13:52] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:01] ATSPTrainer.py(174) : Epoch  59: Train (100%)  Score: 1.5808,  Loss: -0.0415
+[2024-09-05 15:14:01] ATSPTrainer.py(108) : Epoch  59/2000: Time Est.: Elapsed[9.56m], Remain[5.24h]
+[2024-09-05 15:14:01] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:01] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:11] ATSPTrainer.py(174) : Epoch  60: Train (100%)  Score: 1.5798,  Loss: -0.0405
+[2024-09-05 15:14:11] ATSPTrainer.py(108) : Epoch  60/2000: Time Est.: Elapsed[9.72m], Remain[5.24h]
+[2024-09-05 15:14:11] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:11] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:20] ATSPTrainer.py(174) : Epoch  61: Train (100%)  Score: 1.5745,  Loss: -0.0414
+[2024-09-05 15:14:20] ATSPTrainer.py(108) : Epoch  61/2000: Time Est.: Elapsed[9.88m], Remain[5.24h]
+[2024-09-05 15:14:20] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:20] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:30] ATSPTrainer.py(174) : Epoch  62: Train (100%)  Score: 1.5832,  Loss: -0.0413
+[2024-09-05 15:14:30] ATSPTrainer.py(108) : Epoch  62/2000: Time Est.: Elapsed[10.04m], Remain[5.23h]
+[2024-09-05 15:14:30] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:30] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:39] ATSPTrainer.py(174) : Epoch  63: Train (100%)  Score: 1.5787,  Loss: -0.0419
+[2024-09-05 15:14:39] ATSPTrainer.py(108) : Epoch  63/2000: Time Est.: Elapsed[10.20m], Remain[5.23h]
+[2024-09-05 15:14:39] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:39] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:49] ATSPTrainer.py(174) : Epoch  64: Train (100%)  Score: 1.5826,  Loss: -0.0411
+[2024-09-05 15:14:49] ATSPTrainer.py(108) : Epoch  64/2000: Time Est.: Elapsed[10.36m], Remain[5.22h]
+[2024-09-05 15:14:49] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:49] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:14:58] ATSPTrainer.py(174) : Epoch  65: Train (100%)  Score: 1.5788,  Loss: -0.0407
+[2024-09-05 15:14:58] ATSPTrainer.py(108) : Epoch  65/2000: Time Est.: Elapsed[10.52m], Remain[5.22h]
+[2024-09-05 15:14:58] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:14:58] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:15:08] ATSPTrainer.py(174) : Epoch  66: Train (100%)  Score: 1.5786,  Loss: -0.0396
+[2024-09-05 15:15:08] ATSPTrainer.py(108) : Epoch  66/2000: Time Est.: Elapsed[10.68m], Remain[5.21h]
+[2024-09-05 15:15:08] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:15:08] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:15:17] ATSPTrainer.py(174) : Epoch  67: Train (100%)  Score: 1.5822,  Loss: -0.0409
+[2024-09-05 15:15:17] ATSPTrainer.py(108) : Epoch  67/2000: Time Est.: Elapsed[10.84m], Remain[5.21h]
+[2024-09-05 15:15:17] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:15:18] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:15:27] ATSPTrainer.py(174) : Epoch  68: Train (100%)  Score: 1.5762,  Loss: -0.0408
+[2024-09-05 15:15:27] ATSPTrainer.py(108) : Epoch  68/2000: Time Est.: Elapsed[11.00m], Remain[5.21h]
+[2024-09-05 15:15:27] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:15:27] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:15:37] ATSPTrainer.py(174) : Epoch  69: Train (100%)  Score: 1.5831,  Loss: -0.0404
+[2024-09-05 15:15:37] ATSPTrainer.py(108) : Epoch  69/2000: Time Est.: Elapsed[11.15m], Remain[5.20h]
+[2024-09-05 15:15:37] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:15:37] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:15:46] ATSPTrainer.py(174) : Epoch  70: Train (100%)  Score: 1.5822,  Loss: -0.0405
+[2024-09-05 15:15:46] ATSPTrainer.py(108) : Epoch  70/2000: Time Est.: Elapsed[11.31m], Remain[5.20h]
+[2024-09-05 15:15:46] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:15:46] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:15:56] ATSPTrainer.py(174) : Epoch  71: Train (100%)  Score: 1.5789,  Loss: -0.0397
+[2024-09-05 15:15:56] ATSPTrainer.py(108) : Epoch  71/2000: Time Est.: Elapsed[11.47m], Remain[5.20h]
+[2024-09-05 15:15:56] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:15:56] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:16:05] ATSPTrainer.py(174) : Epoch  72: Train (100%)  Score: 1.5794,  Loss: -0.0396
+[2024-09-05 15:16:05] ATSPTrainer.py(108) : Epoch  72/2000: Time Est.: Elapsed[11.63m], Remain[5.19h]
+[2024-09-05 15:16:05] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:16:05] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:16:15] ATSPTrainer.py(174) : Epoch  73: Train (100%)  Score: 1.5806,  Loss: -0.0403
+[2024-09-05 15:16:15] ATSPTrainer.py(108) : Epoch  73/2000: Time Est.: Elapsed[11.79m], Remain[5.19h]
+[2024-09-05 15:16:15] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:16:15] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:16:24] ATSPTrainer.py(174) : Epoch  74: Train (100%)  Score: 1.5760,  Loss: -0.0396
+[2024-09-05 15:16:24] ATSPTrainer.py(108) : Epoch  74/2000: Time Est.: Elapsed[11.95m], Remain[5.18h]
+[2024-09-05 15:16:24] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:16:24] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:16:34] ATSPTrainer.py(174) : Epoch  75: Train (100%)  Score: 1.5794,  Loss: -0.0396
+[2024-09-05 15:16:34] ATSPTrainer.py(108) : Epoch  75/2000: Time Est.: Elapsed[12.11m], Remain[5.18h]
+[2024-09-05 15:16:34] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:16:34] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:16:43] ATSPTrainer.py(174) : Epoch  76: Train (100%)  Score: 1.5794,  Loss: -0.0395
+[2024-09-05 15:16:43] ATSPTrainer.py(108) : Epoch  76/2000: Time Est.: Elapsed[12.27m], Remain[5.18h]
+[2024-09-05 15:16:43] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:16:43] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:16:53] ATSPTrainer.py(174) : Epoch  77: Train (100%)  Score: 1.5797,  Loss: -0.0400
+[2024-09-05 15:16:53] ATSPTrainer.py(108) : Epoch  77/2000: Time Est.: Elapsed[12.43m], Remain[5.17h]
+[2024-09-05 15:16:53] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:16:53] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:17:02] ATSPTrainer.py(174) : Epoch  78: Train (100%)  Score: 1.5735,  Loss: -0.0394
+[2024-09-05 15:17:02] ATSPTrainer.py(108) : Epoch  78/2000: Time Est.: Elapsed[12.59m], Remain[5.17h]
+[2024-09-05 15:17:02] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:17:03] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:17:12] ATSPTrainer.py(174) : Epoch  79: Train (100%)  Score: 1.5779,  Loss: -0.0403
+[2024-09-05 15:17:12] ATSPTrainer.py(108) : Epoch  79/2000: Time Est.: Elapsed[12.75m], Remain[5.17h]
+[2024-09-05 15:17:12] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:17:12] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:17:22] ATSPTrainer.py(174) : Epoch  80: Train (100%)  Score: 1.5783,  Loss: -0.0395
+[2024-09-05 15:17:22] ATSPTrainer.py(108) : Epoch  80/2000: Time Est.: Elapsed[12.91m], Remain[5.16h]
+[2024-09-05 15:17:22] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:17:22] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:17:31] ATSPTrainer.py(174) : Epoch  81: Train (100%)  Score: 1.5719,  Loss: -0.0392
+[2024-09-05 15:17:31] ATSPTrainer.py(108) : Epoch  81/2000: Time Est.: Elapsed[13.06m], Remain[5.16h]
+[2024-09-05 15:17:31] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:17:31] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:17:41] ATSPTrainer.py(174) : Epoch  82: Train (100%)  Score: 1.5757,  Loss: -0.0388
+[2024-09-05 15:17:41] ATSPTrainer.py(108) : Epoch  82/2000: Time Est.: Elapsed[13.22m], Remain[5.15h]
+[2024-09-05 15:17:41] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:17:41] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:17:50] ATSPTrainer.py(174) : Epoch  83: Train (100%)  Score: 1.5748,  Loss: -0.0392
+[2024-09-05 15:17:50] ATSPTrainer.py(108) : Epoch  83/2000: Time Est.: Elapsed[13.38m], Remain[5.15h]
+[2024-09-05 15:17:50] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:17:50] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:00] ATSPTrainer.py(174) : Epoch  84: Train (100%)  Score: 1.5754,  Loss: -0.0398
+[2024-09-05 15:18:00] ATSPTrainer.py(108) : Epoch  84/2000: Time Est.: Elapsed[13.54m], Remain[5.15h]
+[2024-09-05 15:18:00] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:00] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:09] ATSPTrainer.py(174) : Epoch  85: Train (100%)  Score: 1.5779,  Loss: -0.0388
+[2024-09-05 15:18:09] ATSPTrainer.py(108) : Epoch  85/2000: Time Est.: Elapsed[13.70m], Remain[5.14h]
+[2024-09-05 15:18:09] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:09] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:19] ATSPTrainer.py(174) : Epoch  86: Train (100%)  Score: 1.5720,  Loss: -0.0393
+[2024-09-05 15:18:19] ATSPTrainer.py(108) : Epoch  86/2000: Time Est.: Elapsed[13.86m], Remain[5.14h]
+[2024-09-05 15:18:19] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:19] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:28] ATSPTrainer.py(174) : Epoch  87: Train (100%)  Score: 1.5729,  Loss: -0.0395
+[2024-09-05 15:18:28] ATSPTrainer.py(108) : Epoch  87/2000: Time Est.: Elapsed[14.02m], Remain[5.14h]
+[2024-09-05 15:18:28] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:28] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:38] ATSPTrainer.py(174) : Epoch  88: Train (100%)  Score: 1.5758,  Loss: -0.0391
+[2024-09-05 15:18:38] ATSPTrainer.py(108) : Epoch  88/2000: Time Est.: Elapsed[14.18m], Remain[5.13h]
+[2024-09-05 15:18:38] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:38] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:47] ATSPTrainer.py(174) : Epoch  89: Train (100%)  Score: 1.5719,  Loss: -0.0387
+[2024-09-05 15:18:47] ATSPTrainer.py(108) : Epoch  89/2000: Time Est.: Elapsed[14.34m], Remain[5.13h]
+[2024-09-05 15:18:47] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:48] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:18:57] ATSPTrainer.py(174) : Epoch  90: Train (100%)  Score: 1.5768,  Loss: -0.0387
+[2024-09-05 15:18:57] ATSPTrainer.py(108) : Epoch  90/2000: Time Est.: Elapsed[14.50m], Remain[5.13h]
+[2024-09-05 15:18:57] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:18:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:19:07] ATSPTrainer.py(174) : Epoch  91: Train (100%)  Score: 1.5785,  Loss: -0.0393
+[2024-09-05 15:19:07] ATSPTrainer.py(108) : Epoch  91/2000: Time Est.: Elapsed[14.66m], Remain[5.12h]
+[2024-09-05 15:19:07] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:19:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:19:16] ATSPTrainer.py(174) : Epoch  92: Train (100%)  Score: 1.5764,  Loss: -0.0390
+[2024-09-05 15:19:16] ATSPTrainer.py(108) : Epoch  92/2000: Time Est.: Elapsed[14.82m], Remain[5.12h]
+[2024-09-05 15:19:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:19:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:19:26] ATSPTrainer.py(174) : Epoch  93: Train (100%)  Score: 1.5736,  Loss: -0.0387
+[2024-09-05 15:19:26] ATSPTrainer.py(108) : Epoch  93/2000: Time Est.: Elapsed[14.97m], Remain[5.12h]
+[2024-09-05 15:19:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:19:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:19:35] ATSPTrainer.py(174) : Epoch  94: Train (100%)  Score: 1.5716,  Loss: -0.0398
+[2024-09-05 15:19:35] ATSPTrainer.py(108) : Epoch  94/2000: Time Est.: Elapsed[15.13m], Remain[5.11h]
+[2024-09-05 15:19:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:19:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:19:45] ATSPTrainer.py(174) : Epoch  95: Train (100%)  Score: 1.5751,  Loss: -0.0382
+[2024-09-05 15:19:45] ATSPTrainer.py(108) : Epoch  95/2000: Time Est.: Elapsed[15.29m], Remain[5.11h]
+[2024-09-05 15:19:45] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:19:45] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:19:54] ATSPTrainer.py(174) : Epoch  96: Train (100%)  Score: 1.5727,  Loss: -0.0375
+[2024-09-05 15:19:54] ATSPTrainer.py(108) : Epoch  96/2000: Time Est.: Elapsed[15.45m], Remain[5.11h]
+[2024-09-05 15:19:54] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:19:54] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:20:04] ATSPTrainer.py(174) : Epoch  97: Train (100%)  Score: 1.5696,  Loss: -0.0374
+[2024-09-05 15:20:04] ATSPTrainer.py(108) : Epoch  97/2000: Time Est.: Elapsed[15.61m], Remain[5.10h]
+[2024-09-05 15:20:04] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:20:04] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:20:13] ATSPTrainer.py(174) : Epoch  98: Train (100%)  Score: 1.5703,  Loss: -0.0375
+[2024-09-05 15:20:13] ATSPTrainer.py(108) : Epoch  98/2000: Time Est.: Elapsed[15.77m], Remain[5.10h]
+[2024-09-05 15:20:13] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:20:13] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:20:23] ATSPTrainer.py(174) : Epoch  99: Train (100%)  Score: 1.5698,  Loss: -0.0376
+[2024-09-05 15:20:23] ATSPTrainer.py(108) : Epoch  99/2000: Time Est.: Elapsed[15.93m], Remain[5.10h]
+[2024-09-05 15:20:23] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:20:23] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:20:32] ATSPTrainer.py(174) : Epoch 100: Train (100%)  Score: 1.5721,  Loss: -0.0381
+[2024-09-05 15:20:32] ATSPTrainer.py(108) : Epoch 100/2000: Time Est.: Elapsed[16.09m], Remain[5.09h]
+[2024-09-05 15:20:32] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:20:33] ATSPTrainer.py(124) : Saving trained_model
+[2024-09-05 15:20:34] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:20:44] ATSPTrainer.py(174) : Epoch 101: Train (100%)  Score: 1.5715,  Loss: -0.0380
+[2024-09-05 15:20:44] ATSPTrainer.py(108) : Epoch 101/2000: Time Est.: Elapsed[16.27m], Remain[5.10h]
+[2024-09-05 15:20:44] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:20:44] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:20:53] ATSPTrainer.py(174) : Epoch 102: Train (100%)  Score: 1.5702,  Loss: -0.0384
+[2024-09-05 15:20:53] ATSPTrainer.py(108) : Epoch 102/2000: Time Est.: Elapsed[16.43m], Remain[5.10h]
+[2024-09-05 15:20:53] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:20:53] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:21:03] ATSPTrainer.py(174) : Epoch 103: Train (100%)  Score: 1.5696,  Loss: -0.0370
+[2024-09-05 15:21:03] ATSPTrainer.py(108) : Epoch 103/2000: Time Est.: Elapsed[16.59m], Remain[5.09h]
+[2024-09-05 15:21:03] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:21:03] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:21:12] ATSPTrainer.py(174) : Epoch 104: Train (100%)  Score: 1.5709,  Loss: -0.0381
+[2024-09-05 15:21:12] ATSPTrainer.py(108) : Epoch 104/2000: Time Est.: Elapsed[16.75m], Remain[5.09h]
+[2024-09-05 15:21:12] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:21:12] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:21:22] ATSPTrainer.py(174) : Epoch 105: Train (100%)  Score: 1.5737,  Loss: -0.0388
+[2024-09-05 15:21:22] ATSPTrainer.py(108) : Epoch 105/2000: Time Est.: Elapsed[16.91m], Remain[5.09h]
+[2024-09-05 15:21:22] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:21:22] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:21:31] ATSPTrainer.py(174) : Epoch 106: Train (100%)  Score: 1.5674,  Loss: -0.0377
+[2024-09-05 15:21:31] ATSPTrainer.py(108) : Epoch 106/2000: Time Est.: Elapsed[17.07m], Remain[5.08h]
+[2024-09-05 15:21:31] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:21:32] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:21:41] ATSPTrainer.py(174) : Epoch 107: Train (100%)  Score: 1.5750,  Loss: -0.0376
+[2024-09-05 15:21:41] ATSPTrainer.py(108) : Epoch 107/2000: Time Est.: Elapsed[17.23m], Remain[5.08h]
+[2024-09-05 15:21:41] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:21:41] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:21:51] ATSPTrainer.py(174) : Epoch 108: Train (100%)  Score: 1.5708,  Loss: -0.0381
+[2024-09-05 15:21:51] ATSPTrainer.py(108) : Epoch 108/2000: Time Est.: Elapsed[17.39m], Remain[5.08h]
+[2024-09-05 15:21:51] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:21:51] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:00] ATSPTrainer.py(174) : Epoch 109: Train (100%)  Score: 1.5709,  Loss: -0.0380
+[2024-09-05 15:22:00] ATSPTrainer.py(108) : Epoch 109/2000: Time Est.: Elapsed[17.55m], Remain[5.07h]
+[2024-09-05 15:22:00] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:00] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:10] ATSPTrainer.py(174) : Epoch 110: Train (100%)  Score: 1.5683,  Loss: -0.0356
+[2024-09-05 15:22:10] ATSPTrainer.py(108) : Epoch 110/2000: Time Est.: Elapsed[17.71m], Remain[5.07h]
+[2024-09-05 15:22:10] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:10] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:19] ATSPTrainer.py(174) : Epoch 111: Train (100%)  Score: 1.5667,  Loss: -0.0372
+[2024-09-05 15:22:19] ATSPTrainer.py(108) : Epoch 111/2000: Time Est.: Elapsed[17.86m], Remain[5.07h]
+[2024-09-05 15:22:19] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:19] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:29] ATSPTrainer.py(174) : Epoch 112: Train (100%)  Score: 1.5679,  Loss: -0.0369
+[2024-09-05 15:22:29] ATSPTrainer.py(108) : Epoch 112/2000: Time Est.: Elapsed[18.02m], Remain[5.06h]
+[2024-09-05 15:22:29] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:29] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:38] ATSPTrainer.py(174) : Epoch 113: Train (100%)  Score: 1.5687,  Loss: -0.0361
+[2024-09-05 15:22:38] ATSPTrainer.py(108) : Epoch 113/2000: Time Est.: Elapsed[18.18m], Remain[5.06h]
+[2024-09-05 15:22:38] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:38] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:48] ATSPTrainer.py(174) : Epoch 114: Train (100%)  Score: 1.5693,  Loss: -0.0372
+[2024-09-05 15:22:48] ATSPTrainer.py(108) : Epoch 114/2000: Time Est.: Elapsed[18.34m], Remain[5.06h]
+[2024-09-05 15:22:48] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:48] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:22:57] ATSPTrainer.py(174) : Epoch 115: Train (100%)  Score: 1.5721,  Loss: -0.0377
+[2024-09-05 15:22:57] ATSPTrainer.py(108) : Epoch 115/2000: Time Est.: Elapsed[18.50m], Remain[5.05h]
+[2024-09-05 15:22:57] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:22:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:23:07] ATSPTrainer.py(174) : Epoch 116: Train (100%)  Score: 1.5676,  Loss: -0.0366
+[2024-09-05 15:23:07] ATSPTrainer.py(108) : Epoch 116/2000: Time Est.: Elapsed[18.66m], Remain[5.05h]
+[2024-09-05 15:23:07] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:23:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:23:16] ATSPTrainer.py(174) : Epoch 117: Train (100%)  Score: 1.5707,  Loss: -0.0365
+[2024-09-05 15:23:16] ATSPTrainer.py(108) : Epoch 117/2000: Time Est.: Elapsed[18.82m], Remain[5.05h]
+[2024-09-05 15:23:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:23:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:23:26] ATSPTrainer.py(174) : Epoch 118: Train (100%)  Score: 1.5721,  Loss: -0.0358
+[2024-09-05 15:23:26] ATSPTrainer.py(108) : Epoch 118/2000: Time Est.: Elapsed[18.98m], Remain[5.04h]
+[2024-09-05 15:23:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:23:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:23:35] ATSPTrainer.py(174) : Epoch 119: Train (100%)  Score: 1.5714,  Loss: -0.0364
+[2024-09-05 15:23:35] ATSPTrainer.py(108) : Epoch 119/2000: Time Est.: Elapsed[19.13m], Remain[5.04h]
+[2024-09-05 15:23:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:23:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:23:45] ATSPTrainer.py(174) : Epoch 120: Train (100%)  Score: 1.5672,  Loss: -0.0368
+[2024-09-05 15:23:45] ATSPTrainer.py(108) : Epoch 120/2000: Time Est.: Elapsed[19.29m], Remain[5.04h]
+[2024-09-05 15:23:45] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:23:45] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:23:54] ATSPTrainer.py(174) : Epoch 121: Train (100%)  Score: 1.5714,  Loss: -0.0366
+[2024-09-05 15:23:54] ATSPTrainer.py(108) : Epoch 121/2000: Time Est.: Elapsed[19.45m], Remain[5.03h]
+[2024-09-05 15:23:54] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:23:54] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:24:04] ATSPTrainer.py(174) : Epoch 122: Train (100%)  Score: 1.5671,  Loss: -0.0357
+[2024-09-05 15:24:04] ATSPTrainer.py(108) : Epoch 122/2000: Time Est.: Elapsed[19.61m], Remain[5.03h]
+[2024-09-05 15:24:04] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:24:04] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:24:13] ATSPTrainer.py(174) : Epoch 123: Train (100%)  Score: 1.5684,  Loss: -0.0364
+[2024-09-05 15:24:13] ATSPTrainer.py(108) : Epoch 123/2000: Time Est.: Elapsed[19.77m], Remain[5.03h]
+[2024-09-05 15:24:13] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:24:14] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:24:23] ATSPTrainer.py(174) : Epoch 124: Train (100%)  Score: 1.5687,  Loss: -0.0361
+[2024-09-05 15:24:23] ATSPTrainer.py(108) : Epoch 124/2000: Time Est.: Elapsed[19.93m], Remain[5.03h]
+[2024-09-05 15:24:23] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:24:23] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:24:33] ATSPTrainer.py(174) : Epoch 125: Train (100%)  Score: 1.5675,  Loss: -0.0368
+[2024-09-05 15:24:33] ATSPTrainer.py(108) : Epoch 125/2000: Time Est.: Elapsed[20.09m], Remain[5.02h]
+[2024-09-05 15:24:33] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:24:33] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:24:42] ATSPTrainer.py(174) : Epoch 126: Train (100%)  Score: 1.5646,  Loss: -0.0354
+[2024-09-05 15:24:42] ATSPTrainer.py(108) : Epoch 126/2000: Time Est.: Elapsed[20.25m], Remain[5.02h]
+[2024-09-05 15:24:42] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:24:42] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:24:52] ATSPTrainer.py(174) : Epoch 127: Train (100%)  Score: 1.5688,  Loss: -0.0357
+[2024-09-05 15:24:52] ATSPTrainer.py(108) : Epoch 127/2000: Time Est.: Elapsed[20.41m], Remain[5.02h]
+[2024-09-05 15:24:52] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:24:52] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:01] ATSPTrainer.py(174) : Epoch 128: Train (100%)  Score: 1.5675,  Loss: -0.0363
+[2024-09-05 15:25:01] ATSPTrainer.py(108) : Epoch 128/2000: Time Est.: Elapsed[20.57m], Remain[5.01h]
+[2024-09-05 15:25:01] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:01] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:11] ATSPTrainer.py(174) : Epoch 129: Train (100%)  Score: 1.5618,  Loss: -0.0360
+[2024-09-05 15:25:11] ATSPTrainer.py(108) : Epoch 129/2000: Time Est.: Elapsed[20.72m], Remain[5.01h]
+[2024-09-05 15:25:11] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:11] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:20] ATSPTrainer.py(174) : Epoch 130: Train (100%)  Score: 1.5691,  Loss: -0.0354
+[2024-09-05 15:25:20] ATSPTrainer.py(108) : Epoch 130/2000: Time Est.: Elapsed[20.88m], Remain[5.01h]
+[2024-09-05 15:25:20] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:20] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:30] ATSPTrainer.py(174) : Epoch 131: Train (100%)  Score: 1.5672,  Loss: -0.0360
+[2024-09-05 15:25:30] ATSPTrainer.py(108) : Epoch 131/2000: Time Est.: Elapsed[21.04m], Remain[5.00h]
+[2024-09-05 15:25:30] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:30] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:39] ATSPTrainer.py(174) : Epoch 132: Train (100%)  Score: 1.5672,  Loss: -0.0347
+[2024-09-05 15:25:39] ATSPTrainer.py(108) : Epoch 132/2000: Time Est.: Elapsed[21.20m], Remain[5.00h]
+[2024-09-05 15:25:39] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:39] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:49] ATSPTrainer.py(174) : Epoch 133: Train (100%)  Score: 1.5689,  Loss: -0.0348
+[2024-09-05 15:25:49] ATSPTrainer.py(108) : Epoch 133/2000: Time Est.: Elapsed[21.36m], Remain[5.00h]
+[2024-09-05 15:25:49] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:49] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:25:58] ATSPTrainer.py(174) : Epoch 134: Train (100%)  Score: 1.5650,  Loss: -0.0349
+[2024-09-05 15:25:58] ATSPTrainer.py(108) : Epoch 134/2000: Time Est.: Elapsed[21.52m], Remain[4.99h]
+[2024-09-05 15:25:58] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:25:58] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:26:08] ATSPTrainer.py(174) : Epoch 135: Train (100%)  Score: 1.5696,  Loss: -0.0355
+[2024-09-05 15:26:08] ATSPTrainer.py(108) : Epoch 135/2000: Time Est.: Elapsed[21.68m], Remain[4.99h]
+[2024-09-05 15:26:08] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:26:08] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:26:17] ATSPTrainer.py(174) : Epoch 136: Train (100%)  Score: 1.5716,  Loss: -0.0355
+[2024-09-05 15:26:17] ATSPTrainer.py(108) : Epoch 136/2000: Time Est.: Elapsed[21.84m], Remain[4.99h]
+[2024-09-05 15:26:17] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:26:18] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:26:27] ATSPTrainer.py(174) : Epoch 137: Train (100%)  Score: 1.5611,  Loss: -0.0343
+[2024-09-05 15:26:27] ATSPTrainer.py(108) : Epoch 137/2000: Time Est.: Elapsed[22.00m], Remain[4.99h]
+[2024-09-05 15:26:27] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:26:27] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:26:37] ATSPTrainer.py(174) : Epoch 138: Train (100%)  Score: 1.5648,  Loss: -0.0336
+[2024-09-05 15:26:37] ATSPTrainer.py(108) : Epoch 138/2000: Time Est.: Elapsed[22.15m], Remain[4.98h]
+[2024-09-05 15:26:37] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:26:37] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:26:46] ATSPTrainer.py(174) : Epoch 139: Train (100%)  Score: 1.5630,  Loss: -0.0347
+[2024-09-05 15:26:46] ATSPTrainer.py(108) : Epoch 139/2000: Time Est.: Elapsed[22.31m], Remain[4.98h]
+[2024-09-05 15:26:46] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:26:46] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:26:56] ATSPTrainer.py(174) : Epoch 140: Train (100%)  Score: 1.5666,  Loss: -0.0353
+[2024-09-05 15:26:56] ATSPTrainer.py(108) : Epoch 140/2000: Time Est.: Elapsed[22.47m], Remain[4.98h]
+[2024-09-05 15:26:56] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:26:56] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:27:05] ATSPTrainer.py(174) : Epoch 141: Train (100%)  Score: 1.5679,  Loss: -0.0355
+[2024-09-05 15:27:05] ATSPTrainer.py(108) : Epoch 141/2000: Time Est.: Elapsed[22.63m], Remain[4.97h]
+[2024-09-05 15:27:05] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:27:05] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:27:15] ATSPTrainer.py(174) : Epoch 142: Train (100%)  Score: 1.5720,  Loss: -0.0344
+[2024-09-05 15:27:15] ATSPTrainer.py(108) : Epoch 142/2000: Time Est.: Elapsed[22.79m], Remain[4.97h]
+[2024-09-05 15:27:15] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:27:15] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:27:24] ATSPTrainer.py(174) : Epoch 143: Train (100%)  Score: 1.5661,  Loss: -0.0343
+[2024-09-05 15:27:24] ATSPTrainer.py(108) : Epoch 143/2000: Time Est.: Elapsed[22.95m], Remain[4.97h]
+[2024-09-05 15:27:24] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:27:24] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:27:34] ATSPTrainer.py(174) : Epoch 144: Train (100%)  Score: 1.5622,  Loss: -0.0348
+[2024-09-05 15:27:34] ATSPTrainer.py(108) : Epoch 144/2000: Time Est.: Elapsed[23.11m], Remain[4.96h]
+[2024-09-05 15:27:34] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:27:34] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:27:43] ATSPTrainer.py(174) : Epoch 145: Train (100%)  Score: 1.5615,  Loss: -0.0361
+[2024-09-05 15:27:43] ATSPTrainer.py(108) : Epoch 145/2000: Time Est.: Elapsed[23.27m], Remain[4.96h]
+[2024-09-05 15:27:43] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:27:43] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:27:53] ATSPTrainer.py(174) : Epoch 146: Train (100%)  Score: 1.5727,  Loss: -0.0351
+[2024-09-05 15:27:53] ATSPTrainer.py(108) : Epoch 146/2000: Time Est.: Elapsed[23.43m], Remain[4.96h]
+[2024-09-05 15:27:53] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:27:53] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:28:02] ATSPTrainer.py(174) : Epoch 147: Train (100%)  Score: 1.5613,  Loss: -0.0344
+[2024-09-05 15:28:02] ATSPTrainer.py(108) : Epoch 147/2000: Time Est.: Elapsed[23.59m], Remain[4.96h]
+[2024-09-05 15:28:02] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:28:02] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:28:12] ATSPTrainer.py(174) : Epoch 148: Train (100%)  Score: 1.5631,  Loss: -0.0353
+[2024-09-05 15:28:12] ATSPTrainer.py(108) : Epoch 148/2000: Time Est.: Elapsed[23.74m], Remain[4.95h]
+[2024-09-05 15:28:12] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:28:12] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:28:21] ATSPTrainer.py(174) : Epoch 149: Train (100%)  Score: 1.5664,  Loss: -0.0341
+[2024-09-05 15:28:21] ATSPTrainer.py(108) : Epoch 149/2000: Time Est.: Elapsed[23.90m], Remain[4.95h]
+[2024-09-05 15:28:21] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:28:22] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:28:31] ATSPTrainer.py(174) : Epoch 150: Train (100%)  Score: 1.5619,  Loss: -0.0347
+[2024-09-05 15:28:31] ATSPTrainer.py(108) : Epoch 150/2000: Time Est.: Elapsed[24.06m], Remain[4.95h]
+[2024-09-05 15:28:31] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:28:31] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:28:41] ATSPTrainer.py(174) : Epoch 151: Train (100%)  Score: 1.5682,  Loss: -0.0342
+[2024-09-05 15:28:41] ATSPTrainer.py(108) : Epoch 151/2000: Time Est.: Elapsed[24.22m], Remain[4.94h]
+[2024-09-05 15:28:41] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:28:41] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:28:50] ATSPTrainer.py(174) : Epoch 152: Train (100%)  Score: 1.5619,  Loss: -0.0346
+[2024-09-05 15:28:50] ATSPTrainer.py(108) : Epoch 152/2000: Time Est.: Elapsed[24.38m], Remain[4.94h]
+[2024-09-05 15:28:50] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:28:50] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:00] ATSPTrainer.py(174) : Epoch 153: Train (100%)  Score: 1.5640,  Loss: -0.0342
+[2024-09-05 15:29:00] ATSPTrainer.py(108) : Epoch 153/2000: Time Est.: Elapsed[24.54m], Remain[4.94h]
+[2024-09-05 15:29:00] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:00] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:09] ATSPTrainer.py(174) : Epoch 154: Train (100%)  Score: 1.5700,  Loss: -0.0341
+[2024-09-05 15:29:09] ATSPTrainer.py(108) : Epoch 154/2000: Time Est.: Elapsed[24.70m], Remain[4.93h]
+[2024-09-05 15:29:09] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:09] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:19] ATSPTrainer.py(174) : Epoch 155: Train (100%)  Score: 1.5636,  Loss: -0.0347
+[2024-09-05 15:29:19] ATSPTrainer.py(108) : Epoch 155/2000: Time Est.: Elapsed[24.86m], Remain[4.93h]
+[2024-09-05 15:29:19] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:19] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:28] ATSPTrainer.py(174) : Epoch 156: Train (100%)  Score: 1.5621,  Loss: -0.0342
+[2024-09-05 15:29:28] ATSPTrainer.py(108) : Epoch 156/2000: Time Est.: Elapsed[25.02m], Remain[4.93h]
+[2024-09-05 15:29:28] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:28] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:38] ATSPTrainer.py(174) : Epoch 157: Train (100%)  Score: 1.5618,  Loss: -0.0340
+[2024-09-05 15:29:38] ATSPTrainer.py(108) : Epoch 157/2000: Time Est.: Elapsed[25.17m], Remain[4.93h]
+[2024-09-05 15:29:38] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:38] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:47] ATSPTrainer.py(174) : Epoch 158: Train (100%)  Score: 1.5597,  Loss: -0.0343
+[2024-09-05 15:29:47] ATSPTrainer.py(108) : Epoch 158/2000: Time Est.: Elapsed[25.33m], Remain[4.92h]
+[2024-09-05 15:29:47] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:47] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:29:57] ATSPTrainer.py(174) : Epoch 159: Train (100%)  Score: 1.5671,  Loss: -0.0347
+[2024-09-05 15:29:57] ATSPTrainer.py(108) : Epoch 159/2000: Time Est.: Elapsed[25.49m], Remain[4.92h]
+[2024-09-05 15:29:57] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:29:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:30:06] ATSPTrainer.py(174) : Epoch 160: Train (100%)  Score: 1.5661,  Loss: -0.0339
+[2024-09-05 15:30:06] ATSPTrainer.py(108) : Epoch 160/2000: Time Est.: Elapsed[25.65m], Remain[4.92h]
+[2024-09-05 15:30:06] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:30:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:30:16] ATSPTrainer.py(174) : Epoch 161: Train (100%)  Score: 1.5654,  Loss: -0.0335
+[2024-09-05 15:30:16] ATSPTrainer.py(108) : Epoch 161/2000: Time Est.: Elapsed[25.81m], Remain[4.91h]
+[2024-09-05 15:30:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:30:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:30:26] ATSPTrainer.py(174) : Epoch 162: Train (100%)  Score: 1.5626,  Loss: -0.0339
+[2024-09-05 15:30:26] ATSPTrainer.py(108) : Epoch 162/2000: Time Est.: Elapsed[25.97m], Remain[4.91h]
+[2024-09-05 15:30:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:30:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:30:35] ATSPTrainer.py(174) : Epoch 163: Train (100%)  Score: 1.5575,  Loss: -0.0340
+[2024-09-05 15:30:35] ATSPTrainer.py(108) : Epoch 163/2000: Time Est.: Elapsed[26.13m], Remain[4.91h]
+[2024-09-05 15:30:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:30:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:30:45] ATSPTrainer.py(174) : Epoch 164: Train (100%)  Score: 1.5642,  Loss: -0.0339
+[2024-09-05 15:30:45] ATSPTrainer.py(108) : Epoch 164/2000: Time Est.: Elapsed[26.29m], Remain[4.91h]
+[2024-09-05 15:30:45] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:30:45] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:30:54] ATSPTrainer.py(174) : Epoch 165: Train (100%)  Score: 1.5692,  Loss: -0.0338
+[2024-09-05 15:30:54] ATSPTrainer.py(108) : Epoch 165/2000: Time Est.: Elapsed[26.45m], Remain[4.90h]
+[2024-09-05 15:30:54] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:30:54] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:31:04] ATSPTrainer.py(174) : Epoch 166: Train (100%)  Score: 1.5601,  Loss: -0.0334
+[2024-09-05 15:31:04] ATSPTrainer.py(108) : Epoch 166/2000: Time Est.: Elapsed[26.61m], Remain[4.90h]
+[2024-09-05 15:31:04] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:31:04] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:31:13] ATSPTrainer.py(174) : Epoch 167: Train (100%)  Score: 1.5618,  Loss: -0.0338
+[2024-09-05 15:31:13] ATSPTrainer.py(108) : Epoch 167/2000: Time Est.: Elapsed[26.77m], Remain[4.90h]
+[2024-09-05 15:31:13] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:31:13] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:31:23] ATSPTrainer.py(174) : Epoch 168: Train (100%)  Score: 1.5607,  Loss: -0.0336
+[2024-09-05 15:31:23] ATSPTrainer.py(108) : Epoch 168/2000: Time Est.: Elapsed[26.93m], Remain[4.89h]
+[2024-09-05 15:31:23] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:31:23] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:31:32] ATSPTrainer.py(174) : Epoch 169: Train (100%)  Score: 1.5652,  Loss: -0.0328
+[2024-09-05 15:31:32] ATSPTrainer.py(108) : Epoch 169/2000: Time Est.: Elapsed[27.08m], Remain[4.89h]
+[2024-09-05 15:31:32] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:31:32] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:31:42] ATSPTrainer.py(174) : Epoch 170: Train (100%)  Score: 1.5645,  Loss: -0.0334
+[2024-09-05 15:31:42] ATSPTrainer.py(108) : Epoch 170/2000: Time Est.: Elapsed[27.24m], Remain[4.89h]
+[2024-09-05 15:31:42] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:31:42] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:31:51] ATSPTrainer.py(174) : Epoch 171: Train (100%)  Score: 1.5596,  Loss: -0.0337
+[2024-09-05 15:31:51] ATSPTrainer.py(108) : Epoch 171/2000: Time Est.: Elapsed[27.40m], Remain[4.88h]
+[2024-09-05 15:31:51] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:31:51] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:01] ATSPTrainer.py(174) : Epoch 172: Train (100%)  Score: 1.5655,  Loss: -0.0336
+[2024-09-05 15:32:01] ATSPTrainer.py(108) : Epoch 172/2000: Time Est.: Elapsed[27.56m], Remain[4.88h]
+[2024-09-05 15:32:01] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:01] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:10] ATSPTrainer.py(174) : Epoch 173: Train (100%)  Score: 1.5639,  Loss: -0.0335
+[2024-09-05 15:32:10] ATSPTrainer.py(108) : Epoch 173/2000: Time Est.: Elapsed[27.72m], Remain[4.88h]
+[2024-09-05 15:32:10] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:11] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:20] ATSPTrainer.py(174) : Epoch 174: Train (100%)  Score: 1.5628,  Loss: -0.0328
+[2024-09-05 15:32:20] ATSPTrainer.py(108) : Epoch 174/2000: Time Est.: Elapsed[27.88m], Remain[4.88h]
+[2024-09-05 15:32:20] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:20] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:30] ATSPTrainer.py(174) : Epoch 175: Train (100%)  Score: 1.5653,  Loss: -0.0329
+[2024-09-05 15:32:30] ATSPTrainer.py(108) : Epoch 175/2000: Time Est.: Elapsed[28.04m], Remain[4.87h]
+[2024-09-05 15:32:30] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:30] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:39] ATSPTrainer.py(174) : Epoch 176: Train (100%)  Score: 1.5626,  Loss: -0.0330
+[2024-09-05 15:32:39] ATSPTrainer.py(108) : Epoch 176/2000: Time Est.: Elapsed[28.20m], Remain[4.87h]
+[2024-09-05 15:32:39] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:39] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:49] ATSPTrainer.py(174) : Epoch 177: Train (100%)  Score: 1.5610,  Loss: -0.0328
+[2024-09-05 15:32:49] ATSPTrainer.py(108) : Epoch 177/2000: Time Est.: Elapsed[28.36m], Remain[4.87h]
+[2024-09-05 15:32:49] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:49] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:32:58] ATSPTrainer.py(174) : Epoch 178: Train (100%)  Score: 1.5653,  Loss: -0.0323
+[2024-09-05 15:32:58] ATSPTrainer.py(108) : Epoch 178/2000: Time Est.: Elapsed[28.52m], Remain[4.86h]
+[2024-09-05 15:32:58] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:32:58] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:33:08] ATSPTrainer.py(174) : Epoch 179: Train (100%)  Score: 1.5616,  Loss: -0.0332
+[2024-09-05 15:33:08] ATSPTrainer.py(108) : Epoch 179/2000: Time Est.: Elapsed[28.68m], Remain[4.86h]
+[2024-09-05 15:33:08] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:33:08] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:33:17] ATSPTrainer.py(174) : Epoch 180: Train (100%)  Score: 1.5643,  Loss: -0.0328
+[2024-09-05 15:33:17] ATSPTrainer.py(108) : Epoch 180/2000: Time Est.: Elapsed[28.83m], Remain[4.86h]
+[2024-09-05 15:33:17] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:33:17] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:33:27] ATSPTrainer.py(174) : Epoch 181: Train (100%)  Score: 1.5667,  Loss: -0.0335
+[2024-09-05 15:33:27] ATSPTrainer.py(108) : Epoch 181/2000: Time Est.: Elapsed[28.99m], Remain[4.86h]
+[2024-09-05 15:33:27] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:33:27] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:33:36] ATSPTrainer.py(174) : Epoch 182: Train (100%)  Score: 1.5693,  Loss: -0.0335
+[2024-09-05 15:33:36] ATSPTrainer.py(108) : Epoch 182/2000: Time Est.: Elapsed[29.15m], Remain[4.85h]
+[2024-09-05 15:33:36] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:33:36] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:33:46] ATSPTrainer.py(174) : Epoch 183: Train (100%)  Score: 1.5644,  Loss: -0.0332
+[2024-09-05 15:33:46] ATSPTrainer.py(108) : Epoch 183/2000: Time Est.: Elapsed[29.31m], Remain[4.85h]
+[2024-09-05 15:33:46] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:33:46] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:33:55] ATSPTrainer.py(174) : Epoch 184: Train (100%)  Score: 1.5625,  Loss: -0.0326
+[2024-09-05 15:33:55] ATSPTrainer.py(108) : Epoch 184/2000: Time Est.: Elapsed[29.47m], Remain[4.85h]
+[2024-09-05 15:33:55] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:33:56] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:34:05] ATSPTrainer.py(174) : Epoch 185: Train (100%)  Score: 1.5651,  Loss: -0.0326
+[2024-09-05 15:34:05] ATSPTrainer.py(108) : Epoch 185/2000: Time Est.: Elapsed[29.63m], Remain[4.84h]
+[2024-09-05 15:34:05] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:34:05] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:34:15] ATSPTrainer.py(174) : Epoch 186: Train (100%)  Score: 1.5565,  Loss: -0.0331
+[2024-09-05 15:34:15] ATSPTrainer.py(108) : Epoch 186/2000: Time Est.: Elapsed[29.79m], Remain[4.84h]
+[2024-09-05 15:34:15] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:34:15] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:34:24] ATSPTrainer.py(174) : Epoch 187: Train (100%)  Score: 1.5611,  Loss: -0.0321
+[2024-09-05 15:34:24] ATSPTrainer.py(108) : Epoch 187/2000: Time Est.: Elapsed[29.95m], Remain[4.84h]
+[2024-09-05 15:34:24] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:34:24] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:34:34] ATSPTrainer.py(174) : Epoch 188: Train (100%)  Score: 1.5638,  Loss: -0.0337
+[2024-09-05 15:34:34] ATSPTrainer.py(108) : Epoch 188/2000: Time Est.: Elapsed[30.11m], Remain[4.84h]
+[2024-09-05 15:34:34] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:34:34] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:34:43] ATSPTrainer.py(174) : Epoch 189: Train (100%)  Score: 1.5593,  Loss: -0.0319
+[2024-09-05 15:34:43] ATSPTrainer.py(108) : Epoch 189/2000: Time Est.: Elapsed[30.27m], Remain[4.83h]
+[2024-09-05 15:34:43] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:34:43] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:34:53] ATSPTrainer.py(174) : Epoch 190: Train (100%)  Score: 1.5629,  Loss: -0.0327
+[2024-09-05 15:34:53] ATSPTrainer.py(108) : Epoch 190/2000: Time Est.: Elapsed[30.43m], Remain[4.83h]
+[2024-09-05 15:34:53] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:34:53] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:35:02] ATSPTrainer.py(174) : Epoch 191: Train (100%)  Score: 1.5564,  Loss: -0.0323
+[2024-09-05 15:35:02] ATSPTrainer.py(108) : Epoch 191/2000: Time Est.: Elapsed[30.58m], Remain[4.83h]
+[2024-09-05 15:35:02] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:35:02] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:35:12] ATSPTrainer.py(174) : Epoch 192: Train (100%)  Score: 1.5575,  Loss: -0.0326
+[2024-09-05 15:35:12] ATSPTrainer.py(108) : Epoch 192/2000: Time Est.: Elapsed[30.74m], Remain[4.83h]
+[2024-09-05 15:35:12] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:35:12] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:35:21] ATSPTrainer.py(174) : Epoch 193: Train (100%)  Score: 1.5668,  Loss: -0.0329
+[2024-09-05 15:35:21] ATSPTrainer.py(108) : Epoch 193/2000: Time Est.: Elapsed[30.90m], Remain[4.82h]
+[2024-09-05 15:35:21] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:35:21] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:35:31] ATSPTrainer.py(174) : Epoch 194: Train (100%)  Score: 1.5637,  Loss: -0.0318
+[2024-09-05 15:35:31] ATSPTrainer.py(108) : Epoch 194/2000: Time Est.: Elapsed[31.06m], Remain[4.82h]
+[2024-09-05 15:35:31] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:35:31] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:35:40] ATSPTrainer.py(174) : Epoch 195: Train (100%)  Score: 1.5603,  Loss: -0.0316
+[2024-09-05 15:35:40] ATSPTrainer.py(108) : Epoch 195/2000: Time Est.: Elapsed[31.22m], Remain[4.82h]
+[2024-09-05 15:35:40] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:35:41] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:35:50] ATSPTrainer.py(174) : Epoch 196: Train (100%)  Score: 1.5635,  Loss: -0.0325
+[2024-09-05 15:35:50] ATSPTrainer.py(108) : Epoch 196/2000: Time Est.: Elapsed[31.38m], Remain[4.81h]
+[2024-09-05 15:35:50] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:35:50] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:00] ATSPTrainer.py(174) : Epoch 197: Train (100%)  Score: 1.5616,  Loss: -0.0319
+[2024-09-05 15:36:00] ATSPTrainer.py(108) : Epoch 197/2000: Time Est.: Elapsed[31.54m], Remain[4.81h]
+[2024-09-05 15:36:00] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:00] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:09] ATSPTrainer.py(174) : Epoch 198: Train (100%)  Score: 1.5596,  Loss: -0.0322
+[2024-09-05 15:36:09] ATSPTrainer.py(108) : Epoch 198/2000: Time Est.: Elapsed[31.70m], Remain[4.81h]
+[2024-09-05 15:36:09] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:09] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:19] ATSPTrainer.py(174) : Epoch 199: Train (100%)  Score: 1.5616,  Loss: -0.0312
+[2024-09-05 15:36:19] ATSPTrainer.py(108) : Epoch 199/2000: Time Est.: Elapsed[31.86m], Remain[4.81h]
+[2024-09-05 15:36:19] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:19] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:28] ATSPTrainer.py(174) : Epoch 200: Train (100%)  Score: 1.5654,  Loss: -0.0321
+[2024-09-05 15:36:28] ATSPTrainer.py(108) : Epoch 200/2000: Time Est.: Elapsed[32.02m], Remain[4.80h]
+[2024-09-05 15:36:28] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:28] ATSPTrainer.py(124) : Saving trained_model
+[2024-09-05 15:36:28] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:38] ATSPTrainer.py(174) : Epoch 201: Train (100%)  Score: 1.5642,  Loss: -0.0322
+[2024-09-05 15:36:38] ATSPTrainer.py(108) : Epoch 201/2000: Time Est.: Elapsed[32.18m], Remain[4.80h]
+[2024-09-05 15:36:38] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:38] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:47] ATSPTrainer.py(174) : Epoch 202: Train (100%)  Score: 1.5593,  Loss: -0.0318
+[2024-09-05 15:36:47] ATSPTrainer.py(108) : Epoch 202/2000: Time Est.: Elapsed[32.34m], Remain[4.80h]
+[2024-09-05 15:36:47] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:48] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:36:57] ATSPTrainer.py(174) : Epoch 203: Train (100%)  Score: 1.5580,  Loss: -0.0311
+[2024-09-05 15:36:57] ATSPTrainer.py(108) : Epoch 203/2000: Time Est.: Elapsed[32.50m], Remain[4.79h]
+[2024-09-05 15:36:57] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:36:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:37:07] ATSPTrainer.py(174) : Epoch 204: Train (100%)  Score: 1.5574,  Loss: -0.0313
+[2024-09-05 15:37:07] ATSPTrainer.py(108) : Epoch 204/2000: Time Est.: Elapsed[32.66m], Remain[4.79h]
+[2024-09-05 15:37:07] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:37:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:37:16] ATSPTrainer.py(174) : Epoch 205: Train (100%)  Score: 1.5623,  Loss: -0.0323
+[2024-09-05 15:37:16] ATSPTrainer.py(108) : Epoch 205/2000: Time Est.: Elapsed[32.81m], Remain[4.79h]
+[2024-09-05 15:37:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:37:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:37:26] ATSPTrainer.py(174) : Epoch 206: Train (100%)  Score: 1.5609,  Loss: -0.0326
+[2024-09-05 15:37:26] ATSPTrainer.py(108) : Epoch 206/2000: Time Est.: Elapsed[32.97m], Remain[4.79h]
+[2024-09-05 15:37:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:37:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:37:35] ATSPTrainer.py(174) : Epoch 207: Train (100%)  Score: 1.5611,  Loss: -0.0314
+[2024-09-05 15:37:35] ATSPTrainer.py(108) : Epoch 207/2000: Time Est.: Elapsed[33.13m], Remain[4.78h]
+[2024-09-05 15:37:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:37:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:37:45] ATSPTrainer.py(174) : Epoch 208: Train (100%)  Score: 1.5638,  Loss: -0.0308
+[2024-09-05 15:37:45] ATSPTrainer.py(108) : Epoch 208/2000: Time Est.: Elapsed[33.29m], Remain[4.78h]
+[2024-09-05 15:37:45] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:37:45] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:37:54] ATSPTrainer.py(174) : Epoch 209: Train (100%)  Score: 1.5560,  Loss: -0.0318
+[2024-09-05 15:37:54] ATSPTrainer.py(108) : Epoch 209/2000: Time Est.: Elapsed[33.45m], Remain[4.78h]
+[2024-09-05 15:37:54] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:37:54] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:38:04] ATSPTrainer.py(174) : Epoch 210: Train (100%)  Score: 1.5591,  Loss: -0.0314
+[2024-09-05 15:38:04] ATSPTrainer.py(108) : Epoch 210/2000: Time Est.: Elapsed[33.61m], Remain[4.77h]
+[2024-09-05 15:38:04] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:38:04] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:38:13] ATSPTrainer.py(174) : Epoch 211: Train (100%)  Score: 1.5649,  Loss: -0.0309
+[2024-09-05 15:38:13] ATSPTrainer.py(108) : Epoch 211/2000: Time Est.: Elapsed[33.77m], Remain[4.77h]
+[2024-09-05 15:38:13] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:38:13] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:38:23] ATSPTrainer.py(174) : Epoch 212: Train (100%)  Score: 1.5649,  Loss: -0.0308
+[2024-09-05 15:38:23] ATSPTrainer.py(108) : Epoch 212/2000: Time Est.: Elapsed[33.93m], Remain[4.77h]
+[2024-09-05 15:38:23] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:38:23] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:38:32] ATSPTrainer.py(174) : Epoch 213: Train (100%)  Score: 1.5585,  Loss: -0.0313
+[2024-09-05 15:38:32] ATSPTrainer.py(108) : Epoch 213/2000: Time Est.: Elapsed[34.09m], Remain[4.77h]
+[2024-09-05 15:38:32] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:38:33] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:38:42] ATSPTrainer.py(174) : Epoch 214: Train (100%)  Score: 1.5624,  Loss: -0.0309
+[2024-09-05 15:38:42] ATSPTrainer.py(108) : Epoch 214/2000: Time Est.: Elapsed[34.25m], Remain[4.76h]
+[2024-09-05 15:38:42] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:38:42] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:38:52] ATSPTrainer.py(174) : Epoch 215: Train (100%)  Score: 1.5608,  Loss: -0.0312
+[2024-09-05 15:38:52] ATSPTrainer.py(108) : Epoch 215/2000: Time Est.: Elapsed[34.41m], Remain[4.76h]
+[2024-09-05 15:38:52] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:38:52] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:01] ATSPTrainer.py(174) : Epoch 216: Train (100%)  Score: 1.5600,  Loss: -0.0319
+[2024-09-05 15:39:01] ATSPTrainer.py(108) : Epoch 216/2000: Time Est.: Elapsed[34.56m], Remain[4.76h]
+[2024-09-05 15:39:01] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:01] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:11] ATSPTrainer.py(174) : Epoch 217: Train (100%)  Score: 1.5597,  Loss: -0.0306
+[2024-09-05 15:39:11] ATSPTrainer.py(108) : Epoch 217/2000: Time Est.: Elapsed[34.72m], Remain[4.76h]
+[2024-09-05 15:39:11] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:11] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:20] ATSPTrainer.py(174) : Epoch 218: Train (100%)  Score: 1.5607,  Loss: -0.0306
+[2024-09-05 15:39:20] ATSPTrainer.py(108) : Epoch 218/2000: Time Est.: Elapsed[34.88m], Remain[4.75h]
+[2024-09-05 15:39:20] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:20] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:30] ATSPTrainer.py(174) : Epoch 219: Train (100%)  Score: 1.5618,  Loss: -0.0304
+[2024-09-05 15:39:30] ATSPTrainer.py(108) : Epoch 219/2000: Time Est.: Elapsed[35.04m], Remain[4.75h]
+[2024-09-05 15:39:30] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:30] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:39] ATSPTrainer.py(174) : Epoch 220: Train (100%)  Score: 1.5543,  Loss: -0.0305
+[2024-09-05 15:39:39] ATSPTrainer.py(108) : Epoch 220/2000: Time Est.: Elapsed[35.20m], Remain[4.75h]
+[2024-09-05 15:39:39] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:39] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:49] ATSPTrainer.py(174) : Epoch 221: Train (100%)  Score: 1.5627,  Loss: -0.0315
+[2024-09-05 15:39:49] ATSPTrainer.py(108) : Epoch 221/2000: Time Est.: Elapsed[35.36m], Remain[4.74h]
+[2024-09-05 15:39:49] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:49] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:39:58] ATSPTrainer.py(174) : Epoch 222: Train (100%)  Score: 1.5576,  Loss: -0.0310
+[2024-09-05 15:39:58] ATSPTrainer.py(108) : Epoch 222/2000: Time Est.: Elapsed[35.52m], Remain[4.74h]
+[2024-09-05 15:39:58] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:39:59] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:40:08] ATSPTrainer.py(174) : Epoch 223: Train (100%)  Score: 1.5584,  Loss: -0.0308
+[2024-09-05 15:40:08] ATSPTrainer.py(108) : Epoch 223/2000: Time Est.: Elapsed[35.68m], Remain[4.74h]
+[2024-09-05 15:40:08] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:40:08] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:40:18] ATSPTrainer.py(174) : Epoch 224: Train (100%)  Score: 1.5603,  Loss: -0.0308
+[2024-09-05 15:40:18] ATSPTrainer.py(108) : Epoch 224/2000: Time Est.: Elapsed[35.84m], Remain[4.74h]
+[2024-09-05 15:40:18] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:40:18] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:40:27] ATSPTrainer.py(174) : Epoch 225: Train (100%)  Score: 1.5605,  Loss: -0.0311
+[2024-09-05 15:40:27] ATSPTrainer.py(108) : Epoch 225/2000: Time Est.: Elapsed[36.00m], Remain[4.73h]
+[2024-09-05 15:40:27] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:40:27] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:40:37] ATSPTrainer.py(174) : Epoch 226: Train (100%)  Score: 1.5635,  Loss: -0.0305
+[2024-09-05 15:40:37] ATSPTrainer.py(108) : Epoch 226/2000: Time Est.: Elapsed[36.16m], Remain[4.73h]
+[2024-09-05 15:40:37] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:40:37] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:40:46] ATSPTrainer.py(174) : Epoch 227: Train (100%)  Score: 1.5616,  Loss: -0.0294
+[2024-09-05 15:40:46] ATSPTrainer.py(108) : Epoch 227/2000: Time Est.: Elapsed[36.32m], Remain[4.73h]
+[2024-09-05 15:40:46] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:40:46] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:40:56] ATSPTrainer.py(174) : Epoch 228: Train (100%)  Score: 1.5595,  Loss: -0.0308
+[2024-09-05 15:40:56] ATSPTrainer.py(108) : Epoch 228/2000: Time Est.: Elapsed[36.47m], Remain[4.72h]
+[2024-09-05 15:40:56] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:40:56] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:41:05] ATSPTrainer.py(174) : Epoch 229: Train (100%)  Score: 1.5620,  Loss: -0.0309
+[2024-09-05 15:41:05] ATSPTrainer.py(108) : Epoch 229/2000: Time Est.: Elapsed[36.63m], Remain[4.72h]
+[2024-09-05 15:41:05] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:41:05] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:41:15] ATSPTrainer.py(174) : Epoch 230: Train (100%)  Score: 1.5625,  Loss: -0.0301
+[2024-09-05 15:41:15] ATSPTrainer.py(108) : Epoch 230/2000: Time Est.: Elapsed[36.79m], Remain[4.72h]
+[2024-09-05 15:41:15] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:41:15] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:41:24] ATSPTrainer.py(174) : Epoch 231: Train (100%)  Score: 1.5565,  Loss: -0.0314
+[2024-09-05 15:41:24] ATSPTrainer.py(108) : Epoch 231/2000: Time Est.: Elapsed[36.95m], Remain[4.72h]
+[2024-09-05 15:41:24] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:41:24] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:41:34] ATSPTrainer.py(174) : Epoch 232: Train (100%)  Score: 1.5552,  Loss: -0.0300
+[2024-09-05 15:41:34] ATSPTrainer.py(108) : Epoch 232/2000: Time Est.: Elapsed[37.11m], Remain[4.71h]
+[2024-09-05 15:41:34] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:41:34] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:41:43] ATSPTrainer.py(174) : Epoch 233: Train (100%)  Score: 1.5601,  Loss: -0.0300
+[2024-09-05 15:41:43] ATSPTrainer.py(108) : Epoch 233/2000: Time Est.: Elapsed[37.27m], Remain[4.71h]
+[2024-09-05 15:41:43] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:41:43] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:41:53] ATSPTrainer.py(174) : Epoch 234: Train (100%)  Score: 1.5621,  Loss: -0.0299
+[2024-09-05 15:41:53] ATSPTrainer.py(108) : Epoch 234/2000: Time Est.: Elapsed[37.43m], Remain[4.71h]
+[2024-09-05 15:41:53] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:41:53] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:42:02] ATSPTrainer.py(174) : Epoch 235: Train (100%)  Score: 1.5577,  Loss: -0.0303
+[2024-09-05 15:42:02] ATSPTrainer.py(108) : Epoch 235/2000: Time Est.: Elapsed[37.59m], Remain[4.70h]
+[2024-09-05 15:42:02] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:42:03] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:42:12] ATSPTrainer.py(174) : Epoch 236: Train (100%)  Score: 1.5583,  Loss: -0.0301
+[2024-09-05 15:42:12] ATSPTrainer.py(108) : Epoch 236/2000: Time Est.: Elapsed[37.75m], Remain[4.70h]
+[2024-09-05 15:42:12] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:42:12] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:42:22] ATSPTrainer.py(174) : Epoch 237: Train (100%)  Score: 1.5582,  Loss: -0.0296
+[2024-09-05 15:42:22] ATSPTrainer.py(108) : Epoch 237/2000: Time Est.: Elapsed[37.90m], Remain[4.70h]
+[2024-09-05 15:42:22] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:42:22] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:42:31] ATSPTrainer.py(174) : Epoch 238: Train (100%)  Score: 1.5641,  Loss: -0.0303
+[2024-09-05 15:42:31] ATSPTrainer.py(108) : Epoch 238/2000: Time Est.: Elapsed[38.06m], Remain[4.70h]
+[2024-09-05 15:42:31] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:42:31] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:42:41] ATSPTrainer.py(174) : Epoch 239: Train (100%)  Score: 1.5609,  Loss: -0.0302
+[2024-09-05 15:42:41] ATSPTrainer.py(108) : Epoch 239/2000: Time Est.: Elapsed[38.22m], Remain[4.69h]
+[2024-09-05 15:42:41] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:42:41] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:42:50] ATSPTrainer.py(174) : Epoch 240: Train (100%)  Score: 1.5602,  Loss: -0.0303
+[2024-09-05 15:42:50] ATSPTrainer.py(108) : Epoch 240/2000: Time Est.: Elapsed[38.38m], Remain[4.69h]
+[2024-09-05 15:42:50] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:42:50] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:00] ATSPTrainer.py(174) : Epoch 241: Train (100%)  Score: 1.5600,  Loss: -0.0300
+[2024-09-05 15:43:00] ATSPTrainer.py(108) : Epoch 241/2000: Time Est.: Elapsed[38.54m], Remain[4.69h]
+[2024-09-05 15:43:00] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:00] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:09] ATSPTrainer.py(174) : Epoch 242: Train (100%)  Score: 1.5574,  Loss: -0.0303
+[2024-09-05 15:43:09] ATSPTrainer.py(108) : Epoch 242/2000: Time Est.: Elapsed[38.70m], Remain[4.69h]
+[2024-09-05 15:43:09] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:09] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:19] ATSPTrainer.py(174) : Epoch 243: Train (100%)  Score: 1.5542,  Loss: -0.0297
+[2024-09-05 15:43:19] ATSPTrainer.py(108) : Epoch 243/2000: Time Est.: Elapsed[38.86m], Remain[4.68h]
+[2024-09-05 15:43:19] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:19] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:28] ATSPTrainer.py(174) : Epoch 244: Train (100%)  Score: 1.5548,  Loss: -0.0299
+[2024-09-05 15:43:28] ATSPTrainer.py(108) : Epoch 244/2000: Time Est.: Elapsed[39.02m], Remain[4.68h]
+[2024-09-05 15:43:28] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:28] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:38] ATSPTrainer.py(174) : Epoch 245: Train (100%)  Score: 1.5557,  Loss: -0.0301
+[2024-09-05 15:43:38] ATSPTrainer.py(108) : Epoch 245/2000: Time Est.: Elapsed[39.18m], Remain[4.68h]
+[2024-09-05 15:43:38] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:38] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:47] ATSPTrainer.py(174) : Epoch 246: Train (100%)  Score: 1.5558,  Loss: -0.0311
+[2024-09-05 15:43:47] ATSPTrainer.py(108) : Epoch 246/2000: Time Est.: Elapsed[39.34m], Remain[4.67h]
+[2024-09-05 15:43:47] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:47] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:43:57] ATSPTrainer.py(174) : Epoch 247: Train (100%)  Score: 1.5592,  Loss: -0.0297
+[2024-09-05 15:43:57] ATSPTrainer.py(108) : Epoch 247/2000: Time Est.: Elapsed[39.49m], Remain[4.67h]
+[2024-09-05 15:43:57] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:43:57] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:44:06] ATSPTrainer.py(174) : Epoch 248: Train (100%)  Score: 1.5549,  Loss: -0.0295
+[2024-09-05 15:44:06] ATSPTrainer.py(108) : Epoch 248/2000: Time Est.: Elapsed[39.65m], Remain[4.67h]
+[2024-09-05 15:44:06] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:44:07] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:44:16] ATSPTrainer.py(174) : Epoch 249: Train (100%)  Score: 1.5571,  Loss: -0.0297
+[2024-09-05 15:44:16] ATSPTrainer.py(108) : Epoch 249/2000: Time Est.: Elapsed[39.81m], Remain[4.67h]
+[2024-09-05 15:44:16] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:44:16] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:44:26] ATSPTrainer.py(174) : Epoch 250: Train (100%)  Score: 1.5582,  Loss: -0.0300
+[2024-09-05 15:44:26] ATSPTrainer.py(108) : Epoch 250/2000: Time Est.: Elapsed[39.97m], Remain[4.66h]
+[2024-09-05 15:44:26] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:44:26] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:44:35] ATSPTrainer.py(174) : Epoch 251: Train (100%)  Score: 1.5533,  Loss: -0.0304
+[2024-09-05 15:44:35] ATSPTrainer.py(108) : Epoch 251/2000: Time Est.: Elapsed[40.13m], Remain[4.66h]
+[2024-09-05 15:44:35] ATSPTrainer.py(116) : Saving log_image
+[2024-09-05 15:44:35] ATSPTrainer.py(94) : =================================================================
+[2024-09-05 15:44:45] ATSPTrainer.py(174) : Epoch 252: Train (100%)  Score: 1.5587,  Loss: -0.0292

@@ -1,0 +1,29 @@
+[2024-09-06 00:42:16] train.py(161) : DEBUG_MODE: False
+[2024-09-06 00:42:16] train.py(162) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-09-06 00:42:16] train.py(163) : env_params{'node_cnt': 64, 'problem_gen_params': {'int_min': 0, 'int_max': 1000000, 'scaler': 1000000}, 'pomo_size': 20}
+[2024-09-06 00:42:16] train.py(163) : model_params{'embedding_dim': 256, 'sqrt_embedding_dim': 16.0, 'encoder_layer_num': 5, 'qkv_dim': 16, 'sqrt_qkv_dim': 4.0, 'head_num': 16, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'ms_hidden_dim': 16, 'ms_layer1_init': 0.7071067811865476, 'ms_layer2_init': 0.25, 'eval_type': 'argmax', 'one_hot_seed_cnt': 20}
+[2024-09-06 00:42:16] train.py(163) : optimizer_params{'optimizer': {'lr': 0.0004, 'weight_decay': 1e-06}, 'scheduler': {'milestones': [2001, 2101], 'gamma': 0.1}}
+[2024-09-06 00:42:16] train.py(163) : trainer_params{'use_cuda': True, 'cuda_device_num': 0, 'epochs': 2000, 'train_episodes': 10000, 'train_batch_size': 200, 'logging': {'model_save_interval': 100, 'img_save_interval': 200, 'log_image_params_1': {'json_foldername': 'log_image_style', 'filename': 'style.json'}, 'log_image_params_2': {'json_foldername': 'log_image_style', 'filename': 'style_loss.json'}}, 'model_load': {'enable': False}}
+[2024-09-06 00:42:16] train.py(163) : logger_params{'log_file': {'desc': 'matnet_train', 'filename': 'log.txt', 'filepath': './result/20240906_074214_matnet_train'}}
+/home/p_gnngw/miniconda3/envs/cuda118/lib/python3.12/site-packages/torch/__init__.py:696: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /opt/conda/conda-bld/pytorch_1708025824022/work/torch/csrc/tensor/python_tensor.cpp:451.)
+  _C._set_default_tensor_type(t)
+[2024-09-06 00:42:50] ATSPTrainer.py(101) : =================================================================
+/home/p_gnngw/miniconda3/envs/cuda118/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Traceback (most recent call last):
+  File "/project/p_gnn001/code/tsp/MatNet/ATSP/ATSP_MatNet/train.py", line 169, in <module>
+    main()
+  File "/project/p_gnn001/code/tsp/MatNet/ATSP/ATSP_MatNet/train.py", line 146, in main
+    trainer.run()
+  File "/project/p_gnn001/code/tsp/MatNet/ATSP/ATSP_MatNet/ATSPTrainer.py", line 107, in run
+    train_score, train_loss = self._train_one_epoch(epoch)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/p_gnn001/code/tsp/MatNet/ATSP/ATSP_MatNet/ATSPTrainer.py", line 169, in _train_one_epoch
+    avg_score, avg_loss = self._train_one_batch(idxj-idx, self.scaled_problems[idx:idxj])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/p_gnn001/code/tsp/MatNet/ATSP/ATSP_MatNet/ATSPTrainer.py", line 201, in _train_one_batch
+    self.model.pre_forward(reset_state)
+  File "/project/p_gnn001/code/tsp/MatNet/ATSP/ATSP_MatNet/ATSPModel.py", line 70, in pre_forward
+    col_emb[b_idx, n_idx, rand_idx] = 1
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: shape mismatch: indexing tensors could not be broadcast together with shapes [200, 64], [200, 64], [200, 20]

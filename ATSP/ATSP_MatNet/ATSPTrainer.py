@@ -49,6 +49,10 @@ class ATSPTrainer:
         self.model_params = model_params
         self.optimizer_params = optimizer_params
         self.trainer_params = trainer_params
+        
+        # saved data
+        self.scaled_problems = None
+        self.tour_costs = None
 
         # result folder, logger
         self.logger = getLogger(name='trainer')
@@ -87,6 +91,9 @@ class ATSPTrainer:
 
         # utility
         self.time_estimator = TimeEstimator()
+
+        # load the data
+        self.load_my_problems()
 
     def run(self):
         self.time_estimator.reset(self.start_epoch)
@@ -147,28 +154,33 @@ class ATSPTrainer:
 
         score_AM = AverageMeter()
         loss_AM = AverageMeter()
+        gap_AM = AverageMeter()
 
+        self.trainer_params['train_episodes'] = len(self.tour_costs)
         train_num_episode = self.trainer_params['train_episodes']
         episode = 0
         loop_cnt = 0
-        while episode < train_num_episode:
+        idx = 0
+        while idx < train_num_episode:
 
             remaining = train_num_episode - episode
             batch_size = min(self.trainer_params['train_batch_size'], remaining)
-
-            avg_score, avg_loss = self._train_one_batch(batch_size)
-            score_AM.update(avg_score, batch_size)
-            loss_AM.update(avg_loss, batch_size)
-
+            idxj = min(idx+batch_size, train_num_episode)
+            avg_score, avg_loss = self._train_one_batch(idxj-idx, self.scaled_problems[idx:idxj])
+            score_AM.update(avg_score, idxj-idx)
+            loss_AM.update(avg_loss, idxj-idx)
+            gap_AM.update(self.tour_costs[idx:idxj].float().mean().item(), idxj-idx)
             episode += batch_size
 
             # Log First 10 Batch, only at the first epoch
-            if epoch == self.start_epoch:
+            if epoch == self.start_epoch:   
                 loop_cnt += 1
                 if loop_cnt <= 10:
-                    self.logger.info('Epoch {:3d}: Train {:3d}/{:3d}({:1.1f}%)  Score: {:.4f},  Loss: {:.4f}'
+                    self.logger.info('Epoch {:3d}: Train {:3d}/{:3d}({:1.1f}%)  Score: {:.4f},  Loss: {:.4f}, Gap {:.4f}'
                                      .format(epoch, episode, train_num_episode, 100. * episode / train_num_episode,
-                                             score_AM.avg, loss_AM.avg))
+                                             score_AM.avg, loss_AM.avg, gap_AM.avg))
+                    
+            idx += batch_size
 
         # Log Once, for each epoch
         self.logger.info('Epoch {:3d}: Train ({:3.0f}%)  Score: {:.4f},  Loss: {:.4f}'
@@ -177,12 +189,14 @@ class ATSPTrainer:
 
         return score_AM.avg, loss_AM.avg
 
-    def _train_one_batch(self, batch_size):
+    def _train_one_batch(self, batch_size, problems_batch):
 
         # Prep
         ###############################################
         self.model.train()
-        self.env.load_problems(batch_size)
+        
+        # self.env.load_problems(batch_size)
+        self.env.load_problems_manual(problems_batch)
         reset_state, _, _ = self.env.reset()
         self.model.pre_forward(reset_state)
 
@@ -220,3 +234,60 @@ class ATSPTrainer:
         loss_mean.backward()
         self.optimizer.step()
         return score_mean.item(), loss_mean.item()
+    
+
+    def load_my_problems(self):
+        import torch
+        import networkx as nx
+        from pathlib import Path
+        node_cnt = 64
+        # Assuming you have the paths defined properly
+        root_dir = Path('../../../atsp_n5900')  # Root directory for instances
+        train_file = root_dir / 'train.txt'  # The file containing the instance filenames
+
+        # Read the instance filenames from train.txt
+        with open(train_file, 'r') as f:
+            instances = f.readlines()
+            instances = [x.strip() for x in instances]  # Remove newlines and spaces
+
+        # Prepare tensors to store the adjacency matrices and tour costs
+        # Assuming num_instances is the number of instances in train.txt and num_nodes is from each instance graph
+        #instances = instances[:10]
+        num_instances = len(instances)
+        example_graph = nx.read_gpickle(root_dir / instances[0])  # Reading the first graph for size reference
+        num_nodes = len(example_graph.nodes)  # Assuming all graphs have the same number of nodes
+
+        # Initialize tensors
+        adjacency_matrices = torch.zeros((num_instances, num_nodes, num_nodes))
+        tour_costs = torch.zeros(num_instances)
+        
+
+        # Iterate over all instances
+        for i, instance_file in enumerate(instances):
+            # Construct the file path and load the graph using read_gpickle
+            graph = nx.read_gpickle(root_dir / instance_file)
+
+            # Extract adjacency matrix
+            adj_matrix = nx.to_numpy_array(graph)
+            
+            # Store adjacency matrix in the tensor
+            adjacency_matrices[i] = torch.tensor(adj_matrix)
+            
+            # Calculate the tour cost by summing the edges with the 'in_solution' attribute
+            tour_cost = 0
+            for u, v, data in graph.edges(data=True):
+                if data.get('in_solution', False):  # Check if the edge is part of the solution
+                    tour_cost += data.get('weight', 0)  # Add the edge weight to the tour cost
+
+            # Store the tour cost in the tensor
+            tour_costs[i] = tour_cost
+        
+        adjacency_matrices[:, torch.arange(node_cnt), torch.arange(node_cnt)] = 0
+        # Now `adjacency_matrices` holds the adjacency matrices for all instances
+        # and `tour_costs` holds the corresponding tour costs.
+        
+        #scaled_problems =   adjacency_matrices.float() / scaler
+        #tour_costs = tour_costs.float() / scaler
+
+        self.scaled_problems = adjacency_matrices
+        self.tour_costs = tour_costs
